@@ -16,6 +16,7 @@ import static android.example.com.story_app_hw_katsidzira_chelsea.MainActivity.u
 import static android.example.com.story_app_hw_katsidzira_chelsea.R.string.show_story;
 
 public class FinalActivity extends AppCompatActivity {
+    String strShowStoryText = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,7 @@ public class FinalActivity extends AppCompatActivity {
         String bodyPartText = userVars.get(6);
 
         String strShowStoryFormat = getResources().getString(show_story);
-        final String strShowStoryText = String.format(strShowStoryFormat, animalText, stateText, verbText, nameText, relativeText, objectText, bodyPartText);
+        strShowStoryText = String.format(strShowStoryFormat, animalText, stateText, verbText, nameText, relativeText, objectText, bodyPartText);
 
         final TextView textView = findViewById(R.id.story_textview);
         String message = textView.getText().toString();
@@ -65,7 +66,7 @@ public class FinalActivity extends AppCompatActivity {
         Intent share = new Intent(Intent.ACTION_SEND);
         share.setType("text/plain");
         share.putExtra(Intent.EXTRA_SUBJECT, "My Stringify Story!");
-        share.putExtra(Intent.EXTRA_TEXT, "Too wacky to understand!" + getResources().getText(R.string.show_story).toString());
-        startActivity(Intent.createChooser(share, getResources().getText(R.string.show_story)));
+        share.putExtra(Intent.EXTRA_TEXT, "Too " + strShowStoryText);
+        startActivity(Intent.createChooser(share, strShowStoryText));
     }
 }
