@@ -21,6 +21,9 @@ public class FourthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fourth);
 
         Intent intent = getIntent();
+        /**
+         * String never used
+         */
         String verbText = intent.getStringExtra(VERB_STRING);
 
         getSupportActionBar().setTitle("Back");

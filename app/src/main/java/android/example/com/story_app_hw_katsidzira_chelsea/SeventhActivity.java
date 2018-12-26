@@ -24,6 +24,10 @@ public class SeventhActivity extends AppCompatActivity {
         setContentView(R.layout.activity_seventh);
 
         Intent intent = getIntent();
+
+        /**
+         * String never used
+         */
         String objectText = intent.getStringExtra(OBJECT_STRING);
 
         getSupportActionBar().setTitle("Back");

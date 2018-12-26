@@ -23,6 +23,9 @@ public class FinalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final);
 
+        /**
+         * Get rid of this warning about the toolbar by explicitly checking for a null pointer exception.
+         */
         getSupportActionBar().setTitle("Restart Game");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -37,9 +40,20 @@ public class FinalActivity extends AppCompatActivity {
         String strShowStoryFormat = getResources().getString(show_story);
         strShowStoryText = String.format(strShowStoryFormat, animalText, stateText, verbText, nameText, relativeText, objectText, bodyPartText);
 
+        /**
+         * if you're going to set variables final you should do so throughout the entire app
+         */
         final TextView textView = findViewById(R.id.story_textview);
+
+        /**
+         * unused string
+         */
         String message = textView.getText().toString();
 
+        /**
+         * Setting onclicklistener's like this clutters up your on-create method and doesn't promote code reuse you could implement the onclick interface or
+         * declaring a class that implements the onclick interface
+         */
         Button button = findViewById(R.id.show_story_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

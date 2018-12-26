@@ -22,6 +22,10 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Intent intent = getIntent();
+
+        /**
+         * This string is never being used
+         */
         String animalText = intent.getStringExtra(ANIMAL_STRING);
 
         getSupportActionBar().setTitle("Back");
@@ -35,6 +39,9 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * You should be reusing this snippet of code think about splitting this function off into a separate class instead of rewriting this logic again
+         */
         int[] activityColors = getResources().getIntArray(R.array.activityColors);
         int randomActivityColor = activityColors[new Random().nextInt(activityColors.length)];
         findViewById(android.R.id.content).setBackgroundColor(randomActivityColor);
@@ -44,7 +51,6 @@ public class SecondActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.us_state_edittext);
         String stateText = editText.getText().toString().trim();
         userVars.add(1, stateText);
-
         Intent intent = new Intent(this, ThirdActivity.class);
         intent.putExtra(STATE_STRING, stateText);
         startActivity(intent);

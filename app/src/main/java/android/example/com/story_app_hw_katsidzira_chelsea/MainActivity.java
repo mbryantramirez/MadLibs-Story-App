@@ -14,6 +14,11 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     public static final String ANIMAL_STRING = "Animal type";
+
+    /**
+     * You should almost never have public static objects if you need to access this data structure in multiple classes pass them in
+     * they can be freed unexpectedly and can also take on unexpected values.
+     */
     public static ArrayList<String> userVars = new ArrayList<>();
 
     @Override
@@ -29,12 +34,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * This could be split off into its own method
+         */
         int[] activityColors = getResources().getIntArray(R.array.activityColors);
         int randomActivityColor = activityColors[new Random().nextInt(activityColors.length)];
         findViewById(android.R.id.content).setBackgroundColor(randomActivityColor);
     }
 
+    /**
+     * Overridden methods at the top, followed by public, then protected, then private.
+     */
     protected void MoveToNextActivity() {
+
+        /**
+         *  Have the logic stick to the function name, If this function moves to next activity it shouldn't be initializing edit text in the activity this
+         *  should be done before logic
+         */
         EditText editText = findViewById(R.id.animal_edittext);
         String animalText = editText.getText().toString().trim();
         userVars.add(0, animalText);

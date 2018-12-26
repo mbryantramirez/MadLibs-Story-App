@@ -21,6 +21,10 @@ public class ThirdActivity extends AppCompatActivity {
         setContentView(R.layout.activity_third);
 
         Intent intent = getIntent();
+
+        /**
+         * String is never used
+         */
         String animalText = intent.getStringExtra(STATE_STRING);
 
         getSupportActionBar().setTitle("Back");
@@ -34,11 +38,17 @@ public class ThirdActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * Keep your code DRY (Don't Repeat Yourself)
+         */
         int[] activityColors = getResources().getIntArray(R.array.activityColors);
         int randomActivityColor = activityColors[new Random().nextInt(activityColors.length)];
         findViewById(android.R.id.content).setBackgroundColor(randomActivityColor);
     }
 
+    /**
+     * Look's like this code could also be reusable
+     */
     public void MoveToNextActivity() {
         EditText editText = findViewById(R.id.verb_edittext);
         String verbText = editText.getText().toString().trim();

@@ -22,6 +22,9 @@ public class SixthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sixth);
 
         Intent intent = getIntent();
+        /**
+         * String never used
+         */
         String relativeText = intent.getStringExtra(RELATIVE_STRING);
 
         getSupportActionBar().setTitle("Back");

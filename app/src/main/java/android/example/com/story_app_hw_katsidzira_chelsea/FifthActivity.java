@@ -22,6 +22,10 @@ public class FifthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fifth);
 
         Intent intent = getIntent();
+
+        /**
+         * String never used
+         */
         String nameText = intent.getStringExtra(NAME_STRING);
 
         getSupportActionBar().setTitle("Back");
