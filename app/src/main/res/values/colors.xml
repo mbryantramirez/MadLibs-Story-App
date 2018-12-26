@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBabyTeal">#79ffe2</color>
+    <color name="colorBabyBlue">#a4e7ff</color>
+    <color name="colorSeaGreen">#bbff9b</color>
+    <color name="colorPastelYellow">#faea35</color>
+    <color name="colorPeach">#ffc284</color>
+    <color name="colorBabyPink">#ffb5b5</color>
+    <color name="colorDarkerPink">#ff90d6</color>
+    <color name="colorPastelPurple">#d890ff</color>
+    <color name="colorDarkerPurple">#9d90ff</color>
+    <color name="colorBrightRed">#e5df6487</color>
+
+    <integer-array name="activityColors">
+        <item>@color/colorBabyTeal</item>
+        <item>@color/colorBabyBlue</item>
+        <item>@color/colorSeaGreen</item>
+        <item>@color/colorPastelYellow</item>
+        <item>@color/colorPeach</item>
+        <item>@color/colorBabyPink</item>
+        <item>@color/colorDarkerPink</item>
+        <item>@color/colorPastelPurple</item>
+        <item>@color/colorDarkerPurple</item>
+        <item>@color/colorBrightRed</item>
+    </integer-array>
+</resources>

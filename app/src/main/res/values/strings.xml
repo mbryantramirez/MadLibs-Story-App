@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Story_App_HW_KATSIDZIRA_CHELSEA</string>
+    <string name="welcome">Thanks for playing Stringify!</string>
+    <string name="first_word_string">What\'s your favorite animal?</string>
+    <string name="next">Next</string>
+    <string name="us_state">Name a state that we never think about!</string>
+    <string name="give_me_a_verb">Give me a verb in the past tense!</string>
+    <string name="name_a_type_of_relative_most_people_have">Name a type of relative that most people have!</string>
+    <string name="name">Give me a name, any name!</string>
+    <string name="what_is_a_common_household_object">What is a common household object?</string>
+    <string name="name_a_body_part">Name a body part!</string>
+    <string name="yes_please">Yeah!</string>
+    <string name="show_story">A %1$s in %2$s was arrested this morning after they %3$s on top of a group of police officers.\n %4$s has a history of doing this, but no one, not even their %5$s ever imagined they\'d do this, especially with a %6$s stuck in their %7$s!</string>
+    <string name="want_to_see_your_finished_story">Want to see your finished story?</string>
+    <string name="show_story_here">Show story here</string>
+    <string name="share">Share</string>
+</resources>
