@@ -31,6 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Current min API is 15 font family is meant to be used in 16 or higher change your min -->
+
     <EditText
         android:id="@+id/verb_edittext"
         android:layout_width="156dp"
@@ -52,6 +54,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.875" />
 
+    <!-- onClick method name does not exist -->
+    <!-- Prefer wrap content for button height and width -->
     <Button
         android:id="@+id/fourth_activity_button"
         android:layout_width="101dp"

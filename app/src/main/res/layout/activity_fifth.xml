@@ -52,6 +52,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852" />
 
+    <!-- onClick method name does not exist prefer setting onClick in the activity -->
+    <!-- Prefer wrap content for button height and width -->
     <Button
         android:id="@+id/fifth_activity_button"
         android:layout_width="97dp"
